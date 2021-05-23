@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightskyblue;
+}
+.wraper {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(236, 236, 236);
+  border: 1px solid rgb(15, 15, 15, 0.1);
+  margin-top: 1px;
+  padding: 5px;
+  height: 70vh;
+}
+.nav {
+  position: relative;
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid rgb(15, 15, 15, 0.1);
+  margin-top: 1px;
+}
+.nav > ul {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+}
+.nav > ul > li {
+  padding: 15px;
+  background: none;
+}
+.nav > ul > li:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.tabcontent {
+  /* background-color: lightseagreen; */
+  color: white;
+  animation: fadeEffect 1s;
+}
+.tabcontent > h1 {
+  text-transform: capitalize;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.map {
+  margin-top: 40px;
+  height: 200px;
+  /* border: 1px solid red; */
+  /* background-color: white; */
+}
+
+.countries-list > select {
+  /* position: absolute; */
+  /* width: 0px; */
+  /* color: red; */
+  background-color: lightskyblue;
+  width: 100%;
+  height: 7.77vh;
+  border: none;
+  padding: 0px 5px 0px 15px;
+  color: rgb(0, 0, 0);
+  /* background-color: red; */
+  /* background-color: rgb(226, 204, 204) (212, 190, 190); */
+}

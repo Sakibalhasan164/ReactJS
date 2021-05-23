@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255, 255, 155, 0.74)
+    
+}
+.wraper{
+    width: 90%;
+    max-width: 85%;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+.nav{
+    /* background-color: pink; */
+    border-bottom: 1px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.keep{
+    color: rgb(77, 75, 75);
+           
+   
+} 
+form{
+ /* background-color: red; */
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ margin: 0 auto;
+ height: 150px;
+padding: 5px;
+position: relative;
+width: 50%;
+margin-top: 30px;
+ }
+ 
+
+.submit{
+background:none;
+position: absolute;
+bottom:15px;
+right: 10px;
+padding: 5px;
+border-radius: 10px;
+background-color: #ffc20d;
+border: none;
+color: rgb(56, 54, 54);
+transition: 0.2s ease;
+}
+.submit:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+textarea{
+    /* background-color: red; */
+    resize: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top:5px ;
+    border: none;
+   box-shadow:5px 5px 15px 5px rgb(10, 10, 10,0.3);
+}
+
+.input,[type=text]{
+   height: 30px;
+   border-radius: 10px;
+   border: none;
+   box-shadow:5px 5px 15px 5px rgb(10, 10, 10,0.3);
+   padding: 5px; 
+}
+
+.noteDiv{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    
+}
+.note{
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    box-shadow:5px 5px 15px 5px rgba(51, 51, 51, 0.3) ;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+.delete{
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    border:none;
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+      /* background-color: lightblue; */
+    }
+    .noteDiv{
+     grid-template-columns: 1fr 1fr;
+    }
+    form{
+        width: 90%;
+    }
+  
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+      /* background-color: lightblue; */
+    }
+    .noteDiv{
+     grid-template-columns: 1fr;
+    }
+  
+}

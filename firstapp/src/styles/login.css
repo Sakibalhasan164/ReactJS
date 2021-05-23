@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wraper {
+  background-color: pink;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  position: relative;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid black;
+  border-right: none;
+}
+button {
+  background: none;
+  border: 1px solid black;
+  border-left: none;
+  position: absolute;
+  left: 30%;
+  padding: 6.4px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.7;
+}
+.icon {
+  font-size: 20px;
+  transition: 5s;
+}

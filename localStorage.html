@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <p id="p"></p>
+    <button id="btn">Delete</button>
+    <br>
+    <br>
+     <input id="input" type="text" placeholder="Your name">
+     <button id="sub">Submit</button>
+
+<script>
+const paragraph=document.getElementById("p")
+const btn=document.getElementById("btn")
+const input=document.getElementById("input")
+const sub=document.getElementById("sub")
+
+
+
+
+sub.addEventListener("click",()=>{
+    const value=input.value
+    if(value !== ""){
+        localStorage.setItem("name",value)
+    }
+})
+const name=localStorage.getItem("name")
+paragraph.textContent=name
+
+btn.addEventListener("click",()=>{
+    localStorage.removeItem("name")
+})
+
+
+</script>
+</body>
+</html>

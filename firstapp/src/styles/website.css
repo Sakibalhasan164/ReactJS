@@ -1,0 +1,350 @@
+:root {
+  --main: #6B6DFF;
+  --body: #151719;
+  --texts:#9ca9b3;
+  --lightBlcak: #2A2D32;
+  --hover:#6264fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body{
+  background-color: var(--body);
+}
+
+
+.Main-wraper{
+  /* background-color: pink; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 40px;
+ 
+}
+
+.navItems{
+  width:25% ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup{
+  background-color: var(--main);
+  padding: 10px 20px 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;  
+  cursor: pointer;
+}
+.signup:hover{
+background-color:  var(--hover);
+}
+
+
+.docs{
+  color:var(--texts);
+}
+.docs:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.hero{
+  /* background-color: yellowgreen; */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.HeroIntro{
+  /* background-color: tomato; */
+  height: 40vh;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  /* word-break: break-word; */
+}
+.text{
+  /* background-color: lightblue; */
+  margin: 0 auto;
+  padding: 0px 0px 0px 40px;
+}
+
+.buttons {
+display: flex;
+width: 40%;
+/* background-color: white; */
+padding: 5px;
+justify-content: space-between;
+}
+.buttons > button{
+  padding:  10px 20px 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.getStarted{
+  background-color: var(--lightBlcak);
+}
+.github{
+  background-color: var(--main) ;
+}
+.github:hover{
+  background-color: var(--hover);
+}
+
+.heroTitle{
+  color: white;
+  font-size: 47px;
+}
+.heroP{
+  color: var(--texts);
+  font-size: 20px;
+}
+
+.start{
+  color: var(--main);
+}
+.heroImage >img{
+  width: 100%;
+  padding: 5px;
+  /* margin-top: 10px; */
+  margin: 0 auto;
+  opacity: 0.99;
+  border-radius: 10px;
+}
+
+.outro{
+  /* background-color: lightblue; */
+  max-width:100% ;
+  text-align: center;
+}
+
+.outro >h1{
+  color: white;
+}
+.outro> p{
+  color: var(--texts);
+  font-size: 20px;
+}
+
+
+/**/
+/* workflow of the website */
+/**/
+
+.workflowCard{
+  /* background-color: lightblue; */
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  /* padding: 5px; */
+}
+
+.card{
+  /* background-color: lightcoral; */
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workFlowTitle{
+  color: white;
+}
+
+.workflowBody{
+  color: var(--texts);
+  font-size: 20px;
+}
+
+/*  */
+/* customer */
+/*  */
+
+.customers >.intro{
+/* background-color: lightcoral; */
+text-align: center;
+margin-top:90px ;
+}
+.customers >.intro> h1{
+  color: white;
+}
+.customers >.intro> p{
+  color: var(--texts);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+.reviews{
+  /* background-color: lightcyan; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 90px;
+  word-break: break-all;
+  margin-top:10px ;
+}
+
+
+.customerCard{
+  background-color: var(--lightBlcak);
+  color: var(--texts);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding:50px;
+
+}
+.author >h3{
+  color: white;
+}
+.author >h3>span{
+  color: #63C8AC;
+  margin-left:3px ;
+}
+.review>p{
+  font-size: 20px;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin:30px ;
+}
+
+
+/*  */
+/* contact form */
+/*  */
+.contact{
+  background-color: var(--main);
+  width: 100%;
+  height: 20vh;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  justify-content: space-between;
+}
+.contact >.title>h1{
+  color: white;
+}
+
+.contact >.input> input{
+ /* background-color: pink; */
+ height: 50px;
+ padding: 10px;
+ border: none;
+} 
+.send{
+ margin-left: -30px;
+ color: var(--main);
+}
+
+
+/*  */
+/* footer */
+/*  */
+
+.footer{
+  /* background: white; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+.links>ul{
+  display: flex;
+  /* background-color: pink; */
+  width: 120%;
+  list-style-type: none;
+  justify-content: space-around;
+  color: var(--texts);
+}
+.madeby >h4{
+  color: var(--texts);
+}
+.madeby >h4>span{
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+
+/*  */
+/* media quesries */
+
+
+@media only screen and (max-width: 1000px) {
+ .workflowCard{
+   grid-template-columns: 1fr 1fr;
+ }
+ .reviews{
+   grid-template-columns: 1fr 1fr;
+ }
+ 
+}
+@media only screen and (max-width: 768px) {
+ .workflowCard{
+   grid-template-columns: 1fr ;
+   width: 90%;
+   margin: 0 auto;
+   margin-top: 50px;
+ }
+  .reviews{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+  }
+  .customerCard{
+    /* background-color: white; */
+   width: 120%;
+   margin:0 auto;
+  }
+  .contact{
+    height: 40vh;
+  }
+}
+
+/* map */
+
+#mapid { height: 180px; 
+background-color: pink;
+}
